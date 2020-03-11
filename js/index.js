@@ -15,9 +15,9 @@ function mouseOutImage() {
   document.getElementById("poop").src = "img/fun-bus.jpg";
 }
 
-// document.body.addEventListener("keydown", () => {
-//   alert("Welcome to the secret Stool Bus!");
-// });
+document.body.addEventListener("keydown", () => {
+  alert("Welcome to the secret Stool Bus!");
+});
 
 document.querySelector(".intro").addEventListener("wheel", () => {
   alert("YOU SHALL NOT PASS!!!");
@@ -40,9 +40,9 @@ function onDrop(event) {
   dropzone.appendChild(draggableElement);
 }
 
-// window.addEventListener("load", event => {
-//   alert("Page locked and loaded! Let the fun begin!");
-// });
+window.addEventListener("load", event => {
+  alert("Page locked and loaded! Let the fun begin!");
+});
 
 document.getElementById("bgcolor").addEventListener("focus", function(event) {
   event.target.style.background = "orange";
@@ -57,7 +57,7 @@ function myFunction() {
   document.getElementById("demo").style.color = "purple";
 }
 
-document.getElementById("homeLink").addEventListener("click", (event) {
-  event.preventDefault();
-});
-
+a.forEach(b => {
+  b.addEventListener("click", (event) {
+  event.preventDefault()})
+})
