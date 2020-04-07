@@ -7,14 +7,27 @@ document.querySelector("h1").addEventListener("mouseout", function (event) {
   event.target.style.color = "black";
 });
 
-document.querySelectorAll("a").addEventListener("click", function (event) {
+document.querySelector("#nav-link").addEventListener("click", function (event) {
   event.preventDefault();
 });
 
-document.getElementById("bus").addEventListener("mouseover", function (event) {
-  event.target.src =
-    "https://i.pinimg.com/originals/67/48/d4/6748d4c66ef54f1a4b36c1eff32f2a13.jpg";
-});
+document
+  .querySelector("#nav-link2")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+  });
+
+document
+  .querySelector("#nav-link3")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+  });
+
+document
+  .querySelector("#nav-link4")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+  });
 
 window.addEventListener("resize", myFunction);
 
@@ -22,5 +35,38 @@ var x = 0;
 function myFunction() {
   var txt = (x += 1);
   document.getElementById("demo").innerHTML = txt;
-  document.getElementById("demo").style.color = "purple";
+  document.getElementById("demo").style.color = "red";
 }
+
+document.body.addEventListener("keydown", (event) => {
+  event.target.style.color = "white";
+});
+
+document.body.addEventListener("keyup", (event) => {
+  event.target.style.color = "black";
+});
+
+document.querySelector(".content-pick").addEventListener("wheel", () => {
+  event.target.style.background = "grey";
+  event.target.style.color = "white";
+});
+
+document.querySelector("#form").addEventListener(
+  "blur",
+  (event) => {
+    event.target.style.background = "red";
+  },
+  true
+);
+
+document.querySelector("#form").addEventListener(
+  "focus",
+  (event) => {
+    event.target.style.background = "black";
+  },
+  true
+);
+
+window.addEventListener("load", () => {
+  alert("Welcome to user experience hell hahahaha!");
+});
